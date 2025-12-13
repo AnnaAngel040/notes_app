@@ -41,8 +41,8 @@ class AuthGate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final loggedIn = authBox.get('loggedIn', defaultValue: false);
-    return loggedIn ? const NotesHomePage() : const LoginPage();
+    final currentUser = authBox.get('currentUser');
+    return currentUser != null ? const NotesHomePage() : const LoginPage();
   }
 }
 
@@ -187,7 +187,7 @@ class _NotesHomePageState extends State<NotesHomePage> {
           IconButton(
             icon: const Icon(Icons.logout, color: Colors.tealAccent),
             onPressed: () {
-              Hive.box('authBox').put('loggedIn', false);
+              Hive.box('authBox').delete('currentUser');
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (_) => const LoginPage()),
