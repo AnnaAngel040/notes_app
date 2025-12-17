@@ -8,11 +8,11 @@ A simple **offline-first Notes application** built with **Flutter** and **Hive**
 This project is focused on understanding **Flutter app structure**, **stateful widgets**, and **local persistence** without relying on any backend or cloud services.
 
 ## Preview
-
-  <img width="1189" height="976" alt="image" src="https://github.com/user-attachments/assets/bff7af01-34b9-4205-8fd0-eebd1478401a" />
+<img width="466" height="400" alt="image" src="https://github.com/user-attachments/assets/0216ee6f-e1bb-4b90-b7b9-a4fd13c2fc76" />
 
 ---
 
+ 
 ## ✨ Features
 
 - 🔐 Local authentication (Login / Sign Up)
