@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'login_page.dart'; // Ensure this file exists in your project
-import 'services/notes_service.dart'; // Ensure this file exists in your project
+import 'login_page.dart';
+import 'services/notes_service.dart'; 
 
 // ----------------------------------------------------------
 // ROSÉ PINE COLOR PALETTE
@@ -42,7 +42,7 @@ class NotesApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Notes',
       theme: ThemeData(
-        fontFamily: 'Roboto', // Or your preferred font
+        fontFamily: 'Roboto', 
         scaffoldBackgroundColor: RosePine.base,
         brightness: Brightness.dark,
         primaryColor: RosePine.iris,
